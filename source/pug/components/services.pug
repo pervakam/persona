@@ -252,7 +252,8 @@ mixin services
                   p Цены указаны, исходя из категории специалиста:
                   .services__master-change
                     .services__master-change-wrapper
-                      p.services__current-master=masterType[0]
+                      p.services__current-master
+                        span.services__current-master-type=masterType[0]
                       ul.services__master-list.services__master-list--hide
                         each type in masterType
                           li.services__master-type=type
