@@ -1365,8 +1365,6 @@ body {
     background: linear-gradient(180deg, #FBECDF 0%, #BCA589 88.2%, #806E5A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
