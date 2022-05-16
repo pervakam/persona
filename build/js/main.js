@@ -12,8 +12,10 @@ headerToggle.addEventListener('click', () => {
 
 // слайдер в портфолио
 const portfolioSwiper = new Swiper(".portfolio__swiper-container", {
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   spaceBetween: 10,
+  loop: true,
+  slidesPerGroupAuto: true,
 
   wrapperClass: "portfolio__list",
 
@@ -91,20 +93,24 @@ document.querySelectorAll('.page-header__nav-item').forEach((link) => {
 })
 
 // прокрутка услуг в главном блоке
-// const servicesList = ['восстановление волос', 'окрашивание волос', 'эпиляция', 'наращивание ресниц', 'стрижки']
 const aboutServicesBlocks = document.querySelectorAll('.about__description-services')
-
-aboutServicesBlocks.forEach((service, index) => {
-
-})
-
 let i = 0
+
+aboutServicesBlocks[i].classList.add('about__description-services--show')
 setInterval(() => {
     i++
-    console.log(i);
-    let aboutServicesBlock = document.querySelector('.about__description-services--' + i)
-    aboutServicesBlock.classList.remove('about__description-services--hide')
-    //     service.classList.remove('about__description-services--hide')
+    const aboutServicesBlock = document.querySelector('.about__description-services--' + i)
+    const aboutServicesPrevBlock = document.querySelector('.about__description-services--' + (i - 1))
+
+    if (i >= 0 && i < aboutServicesBlocks.length) {
+      aboutServicesBlock.classList.add('about__description-services--show')
+      aboutServicesPrevBlock.classList.remove('about__description-services--show')
+    } else {
+      aboutServicesPrevBlock.classList.remove('about__description-services--show')
+      aboutServicesBlocks[0].classList.add('about__description-services--show')
+      i = 0
+    }
+//
   },
   2000)
 
