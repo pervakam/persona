@@ -1,0 +1,69 @@
+include ./icon
+
+mixin specialists
+  -
+    const specialistsList = [
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      },
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      },
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      },
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      },
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      },
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      },
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      },
+      {
+        photo: '../../img/master.png',
+        name: 'Екатерина Боркарова',
+        position: 'топ-стилист',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+      }
+
+    ]
+
+  .specialists(id='masters' class='js-section')
+    h2.title.title--h2 Наши специалисты
+    ul.specialists__list
+      each item in specialistsList
+        li.specialists__item
+          .specialists__item-photo
+            img(src=item.photo)
+            button.specialists__item-more
+              +icon('play')
+          .specialists__item-about
+            p.specialists__item-name=item.name
+            p.specialists__item-position=item.position
+            p.specialists__item-description=item.description

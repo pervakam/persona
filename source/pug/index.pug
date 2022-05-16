@@ -1,0 +1,17 @@
+include ./components/head
+include ./components/header
+include ./components/footer
+include ./components/main
+
+doctype html
+html(lang="ru")
+  +head()
+  body
+    div(style="display: none")
+      include ../../build/img/sprite_auto.svg
+
+    +header()
+    +main()
+    +footer()
+    script(src="js/swiper-bundle.min.js" type="module")
+    script(src="js/main.min.js" type="module")

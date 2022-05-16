@@ -1,0 +1,190 @@
+.btn {
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1px;
+  background: linear-gradient(180deg, #FBECDF 0%, #BCA589 88.2%, #806E5A 100%);
+  cursor: pointer;
+  transition: 0.5s;
+  height: fit-content;
+  width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+
+  &__wrapper {
+    display: block;
+    background-color: $background-main;
+    border-radius: 20px;
+    padding: 21px 44px;
+    transition: 0.5s;
+
+    span {
+      background: linear-gradient(180deg, #FBECDF 0%, #BCA589 88.2%, #806E5A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 0.5s;
+      color: $grey-dark;
+    }
+  }
+
+  &:hover {
+    .btn__wrapper {
+      background-color: transparent;
+      transition: 0.5s;
+
+      span {
+        color: $black-text;
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  &:active {
+    background: linear-gradient(180deg, #BCA589 0.01%, #FBECDF 99.99%, #806E5A 100%);
+    transition: 0.5s;
+  }
+
+  &--big {
+    font-size: 14px;
+    background: radial-gradient(30.86% 111.87% at 83.45% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(14.14% 51.25% at 14.66% 47.5%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FBECDF 0%, #BCA589 88.2%, #806E5A 100%);
+    box-shadow: 0 10px 50px rgba(188, 165, 137, 0.46);
+    width: 340px;
+
+    .btn__wrapper {
+      background: none;
+      padding: 36px 20px;
+      transition: 0.5s;
+
+      span {
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        transition: 0.5s;
+      }
+    }
+
+    &:hover {
+      background: radial-gradient(30.86% 111.87% at 83.45% 50%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(14.14% 51.25% at 14.66% 47.5%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FBECDF 0%, #BCA589 88.2%, #806E5A 100%);
+      box-shadow: 0 10px 50px rgba(188, 165, 137, 0.2);
+    }
+
+    &:active {
+      background: linear-gradient(180deg, #BCA589 0.01%, #FBECDF 99.99%, #806E5A 100%);
+      box-shadow: none;
+    }
+  }
+
+  &--whatsapp {
+    background: linear-gradient(180deg, #BAF2B1 0%, #618C5A 88.2%, #476043 100%);
+
+    .btn__wrapper {
+      span {
+        background: linear-gradient(180deg, #BAF2B1 0%, #618C5A 88.2%, #476043 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        color: $white;
+      }
+    }
+
+    &:hover {
+      .btn__wrapper {
+        span {
+          color: $white;
+        }
+      }
+    }
+
+    &:active {
+      background: linear-gradient(180deg, #476043 0.01%, #7DB174 99.99%, #BAF2B1 100%);
+      transition: 0.5s;
+    }
+  }
+
+  &--telegram {
+    background: linear-gradient(180deg, #B1DFF2 0%, #385C6B 88.2%, #223D48 100%);
+
+    .btn__wrapper {
+      span {
+        background: linear-gradient(180deg, #B1DFF2 0%, #385C6B 88.2%, #223D48 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: $white;
+      }
+    }
+
+    &:hover {
+      .btn__wrapper {
+        span {
+          color: $white;
+        }
+      }
+    }
+
+    &:active {
+      background: linear-gradient(180deg, #245C74 0.01%, #5894AE 99.98%);
+      transition: 0.5s;
+    }
+  }
+
+  &--instagram {
+    background: radial-gradient(37.5% 308.93% at 90.46% 19.64%, #FF9900 0%, rgba(255, 189, 90, 0) 100%), linear-gradient(180deg, #FBDFF8 0%, #B889BC 88.2%, #64115C 100%);
+
+    .btn__wrapper {
+      span {
+        background: radial-gradient(37.5% 308.93% at 90.46% 19.64%, #FF9900 0%, rgba(255, 189, 90, 0) 100%), linear-gradient(180deg, #FBDFF8 0%, #B889BC 88.2%, #64115C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: $white;
+      }
+    }
+
+    &:hover {
+      .btn__wrapper {
+        span {
+          color: $white;
+        }
+      }
+    }
+
+    &:active {
+      background: radial-gradient(75% 372.37% at 92.77% 0%, rgba(255, 153, 0, 0.42) 0%, rgba(255, 189, 90, 0) 100%), linear-gradient(180deg, #64115C 0%, #B889BC 99.99%, #FBDFF8 100%);
+      transition: 0.5s;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .btn {
+    border-radius: 7px;
+    font-size: 10px;
+
+    &__wrapper {
+      border-radius: 7px;
+      padding: 10px 14px;
+    }
+
+    &--big {
+      border-radius: 20px;
+      font-size: 14px;
+
+      .btn__wrapper {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .btn {
+    &--big {
+      width: 100%;
+    }
+  }
+}

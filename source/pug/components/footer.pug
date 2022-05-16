@@ -1,0 +1,37 @@
+include ./icon
+include ./btn
+
+mixin footer
+  -
+    const navList = [
+      {
+        title: 'Портфолио',
+        link: '#portfolio'
+      },
+      {
+        title: 'Цены',
+        link: '#prices'
+      },
+      {
+        title: 'Мастера',
+        link: '#masters'
+      },
+      {
+        title: 'Отзывы',
+        link: '#reviews'
+      },
+    ]
+
+  header.page-footer
+    .page-footer__wrapper.content
+      .page-footer__logo
+        +icon('logo')
+      .page-footer__nav
+        nav.page-footer__nav-list
+          each item in navList
+            a.page-footer__nav-item(href=item.link)= item.title
+        a.page-footer__privacy-link(href="") Политика конфиденциальности
+      +btn('Записаться')
+
+
+

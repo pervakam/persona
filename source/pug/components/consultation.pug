@@ -1,0 +1,41 @@
+include ./btn
+include ./icon
+
+mixin consultation
+  -
+    const consultationList = [
+      {
+        number: 'img/step_1.svg',
+        title: 'Выявление потребностей',
+        description: 'расскажите о своих пожеланиях в стрижке/окрашивании/маникюре или отправьте фото, на котором вас устраивает результат работы.'
+      },
+      {
+        number: 'img/step_2.svg',
+        title: 'Диагностика',
+        description: 'отправьте фотографии или видео волос/рук в текущем состоянии. Наши специалисты сделают предварительную оценку реальности проведения процедуры.'
+      },
+      {
+        number: 'img/step_3.svg',
+        title: 'Фиксируем стоимость',
+        description: 'по итогу оценки, мы предварительно фиксируем финальную стоимость работ на период в две недели.'
+      }
+    ]
+
+  .consultation.content
+    .consultation__wrapper
+      .consultation__about
+        h2.title.title--h2 Мы заботимся о&nbsp;вашем времени,
+        p и поэтому предлагаем провести 15-минутную консультацию в Whatsapp/Telegram
+          a.consultation__about-whatsapp(href='#')
+            img(src='img/whatsapp.svg')
+          a.consultation__about-telegram(href='#')
+            img(src='img/telegram.svg')
+        +btn('записаться на консультацию', 'btn--big')
+      ul.consultation__steps
+        each item in consultationList
+          li.consultation__step
+            img.consultation__step-number(src=item.number)
+            .consultation__step-description
+              h3=item.title
+              p=item.description
+

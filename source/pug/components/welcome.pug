@@ -1,0 +1,29 @@
+mixin welcome
+  -
+    const welcomeList = [
+      {
+        className: 'welcome__item--consultation',
+        description: 'Опытный мастер проведет консультацию'
+      },
+      {
+        className: 'welcome__item--diagnostic',
+        description: 'Сделаем аппаратную диагностику волос при необходимости'
+      },
+      {
+        className: 'welcome__item--drinks',
+        description: 'Угостим кофе, чаем или газированными напитками'
+      },
+      {
+        className: 'welcome__item--price',
+        description: 'Зафиксируем финальную стоимость работ перед началом'
+      }
+    ]
+
+  .welcome.content
+    h2.title.title--h2 Давайте знакомиться!
+    ul.welcome__list
+      each item in welcomeList
+        li.welcome__item(class=item.className)
+          .welcome__item-wrapper
+            p.welcome__item-description=item.description
+

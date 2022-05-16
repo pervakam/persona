@@ -1,0 +1,291 @@
+mixin services
+  -
+    const servicesList = [
+      {
+        title: 'Парикмахерский зал',
+        checked: 'checked',
+        description: [
+          {
+            title: 'Женская стрижка',
+            description: 'мытье, стрижка и укладка',
+            price: '1700'
+          },
+          {
+            title: 'Детская стрижка',
+            description: 'мытье, стрижка и укладка',
+            price: '1300'
+          },
+          {
+            title: 'Коррекция челки',
+            description: '',
+            price: '500'
+          },
+          {
+            title: 'Экспресс укладка',
+            description: 'укладка на брашинг/плойку без мытья и стайлинга',
+            price: '1200'
+          },
+          {
+            title: 'Вечерняя, свадебная прическа',
+            description: 'мытьё, сбор причёски (возможно использование доп. украшений)',
+            price: '1800'
+          },
+          {
+            title: 'Укладка дневная',
+            description: 'мытьё, укладка',
+            price: '1400'
+          },
+          {
+            title: 'Укладка коктейльная',
+            description: 'мытьё, укладка с использованием термоинструментов',
+            price: '2000'
+          }
+        ]
+      },
+      {
+        title: 'Окрашивание и уход',
+        description: [
+          {
+            title: 'Окрашивание (кор.)',
+            description: 'окрашивание, укладка',
+            price: '1700'
+          },
+          {
+            title: 'Окрашивание (сред.)',
+            description: 'окрашивание, укладка',
+            price: '1300'
+          },
+          {
+            title: 'Окрашивание (длин.)',
+            description: 'окрашивание, укладка',
+            price: '500'
+          },
+          {
+            title: 'Air Touch',
+            description: 'премиальный вид окрашивания',
+            price: '1200'
+          },
+          {
+            title: 'Тонирование(кор.)',
+            description: 'тонирование, укладка',
+            price: '1800'
+          },
+          {
+            title: 'Тонирование (сред.)',
+            description: 'тонирование, укладка',
+            price: '1400'
+          },
+          {
+            title: 'Тонирование (длин.)',
+            description: 'тонирование, укладка',
+            price: '2000'
+          }
+        ]
+      },
+      {
+        title: 'Брови и ресницы',
+        description: [
+          {
+            title: 'Объем ´Классика´',
+            description: '',
+            price: '1700'
+          },
+          {
+            title: 'Объем 1,5D',
+            description: '',
+            price: '1300'
+          },
+          {
+            title: 'Объем 2D',
+            description: '',
+            price: '500'
+          },
+          {
+            title: 'Объем 2,5D',
+            description: '',
+            price: '1200'
+          },
+          {
+            title: 'Объем 3D',
+            description: '',
+            price: '1800'
+          },
+          {
+            title: 'Голливудский объем',
+            description: '',
+            price: '1400'
+          },
+          {
+            title: 'Снятие ресниц',
+            description: '',
+            price: '2000'
+          }
+        ]
+      },
+      {
+        title: 'маникюр',
+        description: [
+          {
+            title: 'Маникюр (классический/аппаратный/смешанный)',
+            description: '',
+            price: '1700'
+          },
+          {
+            title: 'Европейский маникюр',
+            description: '',
+            price: '1300'
+          },
+          {
+            title: 'Детский маникюр',
+            description: '',
+            price: '500'
+          },
+          {
+            title: 'Покрытие лак',
+            description: '',
+            price: '1200'
+          },
+          {
+            title: 'Покрытие гель-лак',
+            description: '',
+            price: '1800'
+          },
+          {
+            title: 'Педикюр',
+            description: '',
+            price: '1400'
+          },
+          {
+            title: 'Наращивание ногтей',
+            description: '',
+            price: '2000'
+          }
+        ]
+      },
+      {
+        title: 'косметология',
+        description: [
+          {
+            type: 'Косметология',
+            services: [
+              {
+                title: 'Атравматическая чистка',
+                description: 'уход, чистка',
+                price: '1300'
+              },
+              {
+                title: 'Комплексная чистка лица (Holy Land)',
+                description: 'уход, чистка',
+                price: '1300'
+              },
+              {
+                title: 'Ультразвуковая\аппаратная чистка лица',
+                description: 'уход, чистка',
+                price: '1300'
+              },
+              {
+                title: 'Механическая чистка лица',
+                description: '',
+                price: '1300'
+              },
+              {
+                title: 'Микротоки лицо',
+                description: '',
+                price: '1800'
+              },
+              {
+                title: 'Микротоки лицо+зона декольте',
+                description: '',
+                price: '1400'
+              }
+            ]
+
+          },
+          {
+            type: 'Эпиляция (верхняя часть тела)',
+            services: [
+              {
+                title: 'Атравматическая чистка',
+                description: 'уход, чистка',
+                price: '1300'
+              }
+            ]
+          },
+          {
+            type: 'Эпиляция (нижняя часть тела)',
+            services: [
+              {
+                title: 'Механическая чистка лица',
+                description: '',
+                price: '1300'
+              }
+            ]
+          }
+        ],
+        noFilter: true
+      },
+    ]
+
+    const masterType = ['мастер', 'топ-мастер', 'стилист', 'топ-стилист']
+
+  .services.content(id='prices' class='js-section')
+    h2.title.title--h2 Услуги и цены
+    .tabs
+      each item, index in servicesList
+        input(
+          type='radio'
+          name='tab-btn'
+          id='tab-btn-' + index
+          checked=item.checked
+          value=''
+        )
+        label(for='tab-btn-' + index)
+          span.tabs__btn-wrapper
+            span=item.title
+
+      each item, index in servicesList
+        .services__description(id='content-' + index)
+          .services__prices
+            .services__master
+              if !item.noFilter
+                .services__master-wrapper
+                  p Цены указаны, исходя из категории специалиста:
+                  .services__master-change
+                    .services__master-change-wrapper
+                      p.services__current-master=masterType[0]
+                      ul.services__master-list.services__master-list--hide
+                        each type in masterType
+                          li.services__master-type=type
+            if !item.noFilter
+              ul.services__service-list
+                each service in item.description
+                  li.services__service-item
+                    .services__service-item-title
+                      p=service.title
+                      if service.description
+                        span=service.description
+                    p.services__service-item-price
+                      span.services__service-current-price=service.price
+                      span.services__service-item-offer-price.services__service-item-offer-price--hide
+            if item.noFilter
+              ul.accordion__info-list
+                each service, i in item.description
+                  li.accordion__info-item
+                    input(type="checkbox" name="accordion-item" class="visually-hidden" id="accordion-item-" + i + "" checked=i === 0 ? 'checked' : false)
+                    label.accordion__info-item-title(for="accordion-item-" + i + "")
+                      span=service.type
+                    .accordion__info-description
+                      ul.services__service-list
+                        each serviceItem in service.services
+                          li.services__service-item
+                            .services__service-item-title
+                              p=serviceItem.title
+                              if serviceItem.description
+                                span=serviceItem.description
+                            p.services__service-item-price
+                              span.services__service-current-price=serviceItem.price
+                              span.services__service-item-offer-price.services__service-item-offer-price--hide
+    .services__offer
+      +btn('воспользоваться скидкой 20%', 'btn--big services__offer-button')
+      +btn('записаться', 'btn--big services__book-button services__book-button--hide')
+      span.services__offer-note Цены пересчитаются автоматически

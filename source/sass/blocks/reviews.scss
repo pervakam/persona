@@ -1,0 +1,161 @@
+.reviews {
+  margin-bottom: 140px;
+
+  h2 {
+    margin-bottom: 64px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 650px;
+    gap: 24px;
+  }
+
+  &__item-wrapper {
+    border-radius: 20px;
+    background: $background-main;
+    padding: 16px 16px 24px;
+    text-align: left;
+    height: fit-content;
+  }
+
+  &__item {
+    background: linear-gradient(120deg, rgba(78, 78, 78, 1) 0%, rgba(12, 12, 12, 1) 56%);
+    border-radius: 20px;
+    padding: 1px;
+    width: 260px;
+  }
+
+  &__item-review {
+    p {
+      margin: 0;
+    }
+  }
+
+  &__item-about {
+    display: flex;
+
+    & > img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+  }
+
+  &__item-name-wrapper {
+    margin-bottom: 12px;
+  }
+
+  &__item-name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__item-place {
+    margin: 0;
+    font-family: $Jost200;
+    font-size: 12px;
+    line-height: 17px;
+    color: $grey;
+  }
+
+  &__item-rate-wrapper {
+    display: flex;
+  }
+
+  &__item-rate {
+    margin: 0 20px 0 0;
+  }
+
+  &__item-rate-star {
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    display: inline-block;
+  }
+
+  &__item-date {
+    margin: 0;
+    font-family: $Jost200;
+    font-size: 12px;
+    line-height: 17px;
+    color: $grey;
+  }
+
+  &__item-photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  &__item-review {
+    font-family: $Jost300;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__item-review-name {
+    font-family: $Jost;
+    margin-right: 4px;
+  }
+
+  &__item-review-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    line-clamp: 6;
+    box-orient: vertical;
+
+    &--small {
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .reviews {
+    margin-bottom: 32px;
+    width: unset;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      overflow: auto;
+      flex-wrap: nowrap;
+      height: unset;
+    }
+
+    &__item {
+      min-width: 260px;
+      height: fit-content;
+    }
+  }
+}

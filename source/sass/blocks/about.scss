@@ -1,0 +1,152 @@
+.about {
+  &__description {
+    max-width: 646px;
+    width: 100%;
+    text-align: left;
+    padding-top: 56px;
+    padding-bottom: 68px;
+
+    & > h1,
+    & > p {
+      padding-right: 40px;
+    }
+
+    & > h1 {
+      span {
+        color: $accent-text;
+        font-family: $Jost500;
+
+      }
+    }
+
+    & > p {
+      font-size: 44px;
+      line-height: 50px;
+      margin: 12px 0 0;
+      color: $grey;
+      font-family: $Jost200;
+
+
+      span {
+        color: $white;
+        font-family: $Jost500;
+      }
+    }
+  }
+
+  &__description-list {
+    list-style: none;
+    margin: 70px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      width: 31%;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        display: block;
+        content: '';
+        height: 48px;
+        min-width: 2px;
+        background: linear-gradient(0deg, #806E5A 0.01%, #BCA589 50%, #FBECDF 100%);
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__description-item {
+    font-size: 13px;
+    line-height: 19px;
+    color: $grey;
+    margin: 0;
+
+    span {
+      color: $white;
+    }
+  }
+
+  &__description-more {
+    margin: 70px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > span {
+      width: 34%;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 23px;
+      color: $grey;
+      display: block;
+      margin-right: 20px;
+    }
+  }
+
+  &__description-services {
+    display: none;
+    &--show {
+        display: unset;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .about {
+    &__description {
+      & > h1 {
+        padding-right: 20px;
+      }
+
+      & > p {
+        font-size: 22px;
+        line-height: 32px;
+
+      }
+    }
+
+    &__description-list {
+      margin: 45px 0 0;
+    }
+
+    &__description-more {
+      margin: 44px 0 0;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > span {
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .about {
+    &__description {
+      padding-top: 12px;
+      padding-bottom: 36px;
+    }
+
+    &__description-list {
+      flex-direction: column;
+
+      li {
+        width: 58%;
+
+        &:before {
+          min-width: 1px;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 28px;
+        }
+
+      }
+    }
+  }
+}

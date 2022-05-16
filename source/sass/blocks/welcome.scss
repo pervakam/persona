@@ -1,0 +1,129 @@
+.welcome {
+  margin-bottom: 80px;
+
+  h2 {
+    text-align: left;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 56px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-wrapper {
+    border-radius: 20px;
+    min-height: 110px;
+
+    background: linear-gradient(90deg, rgba(56, 56, 56, 1) 0%, rgba(21, 21, 21, 1) 53%);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    min-width: 260px;
+    width: 23.5%;
+    background: linear-gradient(90deg, rgba(78, 78, 78, 1) 0%, rgba(12, 12, 12, 1) 56%);
+    border-radius: 20px;
+    position: relative;
+    padding: 1px;
+    min-height: 112px;
+
+    img {
+      width: 100px;
+      height: auto;
+    }
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      min-width: 100px;
+      height: 128px;
+    }
+
+    &--consultation {
+      &:before {
+        left: -4px;
+        top: -12px;
+        background-image: url("../../img/welcome-1.png");
+      }
+    }
+
+    &--diagnostic {
+      &:before {
+        left: -8px;
+        top: -16px;
+        background-image: url("../../img/welcome-2.png");
+      }
+    }
+
+    &--drinks {
+      &:before {
+        left: -12px;
+        top: -8px;
+        background-image: url("../../img/welcome-3.png");
+      }
+    }
+
+    &--price {
+      &:before {
+        left: -12px;
+        top: -16px;
+        background-image: url("../../img/welcome-4.png");
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__item-description {
+    font-size: 16px;
+    line-height: 23px;
+    color: $grey;
+    text-align: left;
+    margin: 0;
+    padding: 22px 12px 22px 94px;
+  }
+
+}
+
+@media (max-width: $tablet-max-width) {
+  .welcome {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .welcome {
+    margin-bottom: 32px;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 36px;
+      }
+    }
+
+    &__item-wrapper {
+      width: 100%;
+    }
+  }
+}

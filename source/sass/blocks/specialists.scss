@@ -1,0 +1,134 @@
+.specialists {
+  max-width: 1194px;
+  width: 100%;
+  margin: 0 auto 100px;
+
+  h2 {
+    margin-bottom: 44px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 272px;
+    margin-bottom: 16px;
+  }
+
+  &__item-photo {
+    position: relative;
+    width: 226px;
+    margin: 0 auto;
+
+    img {
+      position: relative;
+      z-index: 10;
+      pointer-events: none;
+      width: 226px;
+      height: 260px;
+    }
+
+    &:after {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../../img/wave.svg");
+    }
+  }
+
+  &__item-more {
+    border: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(30.86% 111.87% at 83.45% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(14.14% 51.25% at 14.66% 47.5%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FBECDF 0%, #BCA589 100%);
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 50px rgba(188, 165, 137, 0.46);
+    cursor: pointer;
+
+    &:hover {
+      background: radial-gradient(58.86% 95.84% at 100% 37.34%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(49.37% 36.91% at 0% 66.46%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FBECDF 0%, #BCA589 100%);
+      box-shadow: 0 10px 50px rgba(188, 165, 137, 0.2);
+    }
+
+    &:active {
+      background: linear-gradient(180deg, #BCA589 0.01%, #FBECDF 99.99%, #806E5A 100%);
+    }
+
+    svg {
+      width: 13px;
+      height: 15px;
+    }
+  }
+
+  &__item-about {
+    padding: 10px;
+    text-align: left;
+  }
+
+  &__item-name {
+    margin: 0 0 12px;
+    font-size: 24px;
+    background: linear-gradient(180deg, #FBECDF 0%, #BCA589 88.2%, #806E5A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &__item-position {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__item-description {
+    margin: 0;
+    font-family: $Jost200;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .specialists {
+    &__item {
+      width:45%;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .specialists {
+    margin: 0 auto 32px;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+}

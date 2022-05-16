@@ -1,0 +1,38 @@
+include ./icon
+include ./btn
+
+mixin header
+  -
+    const navList = [
+      {
+        title: 'Портфолио',
+        link: 'portfolio'
+      },
+      {
+        title: 'Цены',
+        link: 'prices'
+      },
+      {
+        title: 'Мастера',
+        link: 'masters'
+      },
+      {
+        title: 'Отзывы',
+        link: 'reviews'
+      },
+    ]
+
+  header.page-header
+    .page-header__wrapper.content
+      .page-header__logo
+        +icon('logo')
+      nav.page-header__nav-list.page-header__nav-list--hide
+        each item in navList
+          a.page-header__nav-item(href='#' data-id=item.link)= item.title
+      .page-header__buttons
+        +btn('Записаться')
+        button.page-header__menu-button
+          span.visually-hidden Открыть меню
+
+
+

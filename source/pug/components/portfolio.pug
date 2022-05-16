@@ -1,0 +1,143 @@
+mixin portfolio
+  -
+    const portfolioList = [
+      {
+        img: 'img/portfolio/portfolio_1.png',
+        img2x: 'img/portfolio/portfolio_1@2x.png',
+        webp: 'img/portfolio/portfolio_1.webp',
+        webp2x: 'img/portfolio/portfolio_1@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_5.png',
+        img2x: 'img/portfolio/portfolio_5@2x.png',
+        webp: 'img/portfolio/portfolio_5.webp',
+        webp2x: 'img/portfolio/portfolio_5@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_6.png',
+        img2x: 'img/portfolio/portfolio_6@2x.png',
+        webp: 'img/portfolio/portfolio_6.webp',
+        webp2x: 'img/portfolio/portfolio_6@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_7.png',
+        img2x: 'img/portfolio/portfolio_7@2x.png',
+        webp: 'img/portfolio/portfolio_7.webp',
+        webp2x: 'img/portfolio/portfolio_7@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_8.png',
+        img2x: 'img/portfolio/portfolio_8@2x.png',
+        webp: 'img/portfolio/portfolio_8.webp',
+        webp2x: 'img/portfolio/portfolio_8@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_2.png',
+        img2x: 'img/portfolio/portfolio_2@2x.png',
+        webp: 'img/portfolio/portfolio_2.webp',
+        webp2x: 'img/portfolio/portfolio_2@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_5.png',
+        img2x: 'img/portfolio/portfolio_5@2x.png',
+        webp: 'img/portfolio/portfolio_5.webp',
+        webp2x: 'img/portfolio/portfolio_5@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_6.png',
+        img2x: 'img/portfolio/portfolio_6@2x.png',
+        webp: 'img/portfolio/portfolio_6.webp',
+        webp2x: 'img/portfolio/portfolio_6@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_7.png',
+        img2x: 'img/portfolio/portfolio_7@2x.png',
+        webp: 'img/portfolio/portfolio_7.webp',
+        webp2x: 'img/portfolio/portfolio_7@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_8.png',
+        img2x: 'img/portfolio/portfolio_8@2x.png',
+        webp: 'img/portfolio/portfolio_8.webp',
+        webp2x: 'img/portfolio/portfolio_8@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_3.png',
+        img2x: 'img/portfolio/portfolio_3@2x.png',
+        webp: 'img/portfolio/portfolio_3.webp',
+        webp2x: 'img/portfolio/portfolio_3@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_5.png',
+        img2x: 'img/portfolio/portfolio_5@2x.png',
+        webp: 'img/portfolio/portfolio_5.webp',
+        webp2x: 'img/portfolio/portfolio_5@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_6.png',
+        img2x: 'img/portfolio/portfolio_6@2x.png',
+        webp: 'img/portfolio/portfolio_6.webp',
+        webp2x: 'img/portfolio/portfolio_6@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_7.png',
+        img2x: 'img/portfolio/portfolio_7@2x.png',
+        webp: 'img/portfolio/portfolio_7.webp',
+        webp2x: 'img/portfolio/portfolio_7@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_8.png',
+        img2x: 'img/portfolio/portfolio_8@2x.png',
+        webp: 'img/portfolio/portfolio_8.webp',
+        webp2x: 'img/portfolio/portfolio_8@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_4.png',
+        img2x: 'img/portfolio/portfolio_4@2x.png',
+        webp: 'img/portfolio/portfolio_4.webp',
+        webp2x: 'img/portfolio/portfolio_4@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_5.png',
+        img2x: 'img/portfolio/portfolio_5@2x.png',
+        webp: 'img/portfolio/portfolio_5.webp',
+        webp2x: 'img/portfolio/portfolio_5@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_6.png',
+        img2x: 'img/portfolio/portfolio_6@2x.png',
+        webp: 'img/portfolio/portfolio_6.webp',
+        webp2x: 'img/portfolio/portfolio_6@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_7.png',
+        img2x: 'img/portfolio/portfolio_7@2x.png',
+        webp: 'img/portfolio/portfolio_7.webp',
+        webp2x: 'img/portfolio/portfolio_7@2x.webp'
+      },
+      {
+        img: 'img/portfolio/portfolio_8.png',
+        img2x: 'img/portfolio/portfolio_8@2x.png',
+        webp: 'img/portfolio/portfolio_8.webp',
+        webp2x: 'img/portfolio/portfolio_8@2x.webp'
+      }
+
+    ]
+
+  .portfolio.content(id='portfolio' class='js-section')
+    h2.title.title--h2 Портфолио
+    p Каждый день мы сталкиваемся с абсолютно разными запросами от клиентов, и на протяжении 7 лет работы салона красоты - справляемся со всем на 100%
+    .portfolio__wrapper
+      .portfolio__swiper-container
+        .portfolio__list-prev
+        ul.portfolio__list
+          each item in portfolioList
+            li.portfolio__item.swiper-slide
+              picture
+                source( type="image/webp" srcset=item.webp +  " 1x, " + item.webp2x + " 2x")
+                img(loading="lazy" src=item.img srcset=item.img2x + " 2x" alt="portfolio-pic")
+        .portfolio__list-next
+    a.btn.btn--big(href="#")
+      span.btn__wrapper
+        span больше работ в инстаграм  →
+

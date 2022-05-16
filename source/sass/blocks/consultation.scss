@@ -1,0 +1,221 @@
+.consultation {
+  &__wrapper {
+    border-radius: 20px;
+    background: linear-gradient(96.58deg, rgba(251, 236, 223, 0.06) 15.96%, rgba(251, 236, 223, 0) 79.22%), linear-gradient(270.41deg, rgba(21, 21, 21, 0.72) 0.34%, rgba(21, 21, 21, 0.504) 99.64%);
+    backdrop-filter: blur(40px);
+    border: 2px solid #cabfb1;
+    padding: 44px 60px 56px;
+
+    .btn--big {
+      .btn__wrapper {
+        padding: 36px;
+      }
+    }
+
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  &__about {
+    width: 48%;
+
+    img {
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+    }
+
+    h2 {
+      line-height: 64px;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-family: $Jost200;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0;
+      margin-bottom: 56px;
+      padding-right: 40px;
+    }
+  }
+
+  &__about-whatsapp {
+    margin-left: 20px;
+
+    img {
+      box-shadow: 0 1px 0 #476043, 0 4px 13px rgba(186, 242, 177, 0.2);
+    }
+  }
+
+  &__about-telegram {
+    margin-left: 16px;
+
+    img {
+      box-shadow: 0 1px 0 #223D48, 0 4px 13px rgba(177, 223, 242, 0.2);
+    }
+  }
+
+  &__steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 48%;
+  }
+
+  &__step {
+    position: relative;
+    padding-left: 198px;
+
+    .consultation__step-number {
+      top: -44px;
+      left: -44px;
+    }
+
+    &:nth-child(even) {
+      padding-right: 200px;
+      padding-left: 0;
+
+      .consultation__step-number {
+        top: -32px;
+        left: unset;
+        right: -32px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-family: $Jost300;
+      font-size: 24px;
+      line-height: 40px;
+      margin: 0;
+    }
+
+    p {
+      font-family: $Jost300;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+    }
+  }
+
+  &__step-number {
+    position: absolute;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .consultation {
+    &__about {
+      h2 {
+        line-height: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .consultation {
+    &__wrapper {
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    &__about {
+      width: 100%;
+    }
+
+    &__steps {
+      width: 100%;
+      margin-top: 24px;
+    }
+
+    &__step-number {
+      width: 150px;
+      height: auto;
+    }
+
+    &__step {
+      padding-left: 140px;
+
+      .consultation__step-number {
+        top: -24px;
+        left: -24px;
+      }
+
+      &:nth-child(even) {
+        padding-right: 140px;
+        padding-left: 0;
+
+        .consultation__step-number {
+          top: -20px;
+          left: unset;
+          right: -20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .consultation {
+    &__about {
+      h2 {
+        line-height: 100%;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 200%;
+        margin: 0;
+        margin-bottom: 24px;
+        padding-right: 0;
+      }
+    }
+
+    &__step {
+      position: relative;
+      padding-left: 0;
+
+      .consultation__step-number {
+        top: unset;
+        left: unset;
+      }
+
+      &:nth-child(even) {
+        padding-right: 0;
+        padding-left: 0;
+
+        .consultation__step-number {
+          top: unset;
+          left: unset;
+          right: unset;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+        line-height: 120%;
+      }
+
+      p {
+        line-height: 120%;
+      }
+    }
+
+    .consultation__step-number {
+      position: relative;
+      width: 100px;
+    }
+
+  }
+}

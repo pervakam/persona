@@ -1,0 +1,35 @@
+include ./btn
+
+mixin about
+  -
+    const descriptionList = [
+      '<span>Премиум-услуги</span> по доступным ценам: опытные специалисты, используем <span>косметику из Европы</span>',
+      '<span>Рядом с домом/офисом:</span><br>удобное расположение, экономия времени, парковка.',
+      '<span>Работаем в 4 руки:</span><br>комбинируем несколько услуг и оказываем их одновременно.'
+    ]
+
+    const servicesList = [
+      'восстановление волос',
+      'окрашивание волос',
+      'эпиляция',
+      'наращивание ресниц',
+      'стрижки'
+    ]
+
+  .about.content
+    .about__description
+      h1.title.title--h1 Салон красоты
+        br
+        span Персона
+        |
+        | на&nbsp;Дубровке
+      p предоставляем все бьюти услуги:&nbsp;
+        each service, index in servicesList
+          span.about__description-services(class='about__description-services--' + index)=service
+      ul.about__description-list
+        each item in descriptionList
+          li
+            p.about__description-item !{item}
+      .about__description-more
+        span Кажется что чего-то не хватает? Нажмите сюда сейчас&nbsp;&xrarr;
+        +btn('Получить скидку 20%', 'btn--big')

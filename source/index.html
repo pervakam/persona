@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="description" content="Салон красоты Персона на Дубровке"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Салон красоты Персона на Дубровке</title>
+	<link rel="preload" href="fonts/jost-regular.woff2" as="font" crossorigin="anonymous" type="font/woff"/>
+	<link rel="preload" href="fonts/jost-extralight.woff2" as="font" crossorigin="anonymous" type="font/woff"/>
+	<link rel="preload" href="fonts/jost-light.woff2" as="font" crossorigin="anonymous" type="font/woff"/>
+	<link rel="preload" href="fonts/jost-medium.woff2" as="font" crossorigin="anonymous" type="font/woff"/>
+	<link rel="preload" href="fonts/jost-bold.woff2" as="font" crossorigin="anonymous" type="font/woff"/>
+	<link href="css/style.min.css" rel="stylesheet"/>
+	<body>
+		<div style="display: none"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="paint0_linear_347_14" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#FBECDF"/><stop offset=".882" stop-color="#BCA589"/><stop offset="1" stop-color="#806E5A"/></linearGradient><linearGradient id="paint1_linear_347_14" x1="18.5" y1="14.5" x2="18.5" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#FBECDF"/><stop offset="1" stop-color="#BCA589"/></linearGradient><linearGradient id="paint0_linear_351_25" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#BCA589"/><stop offset="1" stop-color="#FBECDF"/><stop offset="1" stop-color="#806E5A"/></linearGradient><linearGradient id="paint0_linear_351_18" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse"><stop stop-color="#FBECDF"/><stop offset=".882" stop-color="#BCA589"/></linearGradient></defs><symbol id="arrow"><circle r="17.5" transform="matrix(-1 0 0 1 18 18)" stroke="url(#paint0_linear_347_14)"/><path d="M28 18.5a.5.5 0 000-1v1zm-19.354-.854a.5.5 0 000 .708l3.182 3.181a.5.5 0 10.708-.707L9.707 18l2.829-2.828a.5.5 0 10-.708-.708l-3.182 3.182zM28 17.5H9v1h19v-1z" fill="url(#paint1_linear_347_14)"/></symbol><symbol id="arrow_active"><circle r="18" transform="matrix(-1 0 0 1 18 18)" fill="url(#paint0_linear_351_25)"/><path d="M28 18.5a.5.5 0 000-1v1zm-19.354-.854a.5.5 0 000 .708l3.182 3.181a.5.5 0 10.708-.707L9.707 18l2.829-2.828a.5.5 0 10-.708-.708l-3.182 3.182zM28 17.5H9v1h19v-1z" fill="#48453D"/></symbol><symbol id="arrow_hover"><circle r="18" transform="matrix(-1 0 0 1 18 18)" fill="url(#paint0_linear_351_18)"/><path d="M28 18.5a.5.5 0 000-1v1zm-19.354-.854a.5.5 0 000 .708l3.182 3.181a.5.5 0 10.708-.707L9.707 18l2.829-2.828a.5.5 0 10-.708-.708l-3.182 3.182zM28 17.5H9v1h19v-1z" fill="#48453D"/></symbol><symbol id="logo" viewBox="0 0 160 52"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.866.15C2.1.417 1.513.985 1.183 1.779l-.149.359-.017 8.93L1 19.998h3.346V2.763h13.441v17.235h3.28V0l-8.89.002-8.892.001-.42.147zM26.453.07c-.613.148-1.286.652-1.646 1.233-.417.672-.395.126-.395 9.858v8.836h19.036v-2.763H27.756v-5.789h8.617V8.617h-8.618V2.763h15.757V0l-8.409.007c-4.625.003-8.517.032-8.65.064zm22.182.065c-.496.175-.782.367-1.156.778a2.84 2.84 0 00-.687 1.386c-.041.223-.065 3.472-.065 9.023v8.675h3.345v-8.551l8.408-.017 8.409-.017.016-5.706L66.922 0l-8.956.002c-8.795.002-8.962.005-9.33.134zm23.6-.063c-.729.175-1.444.795-1.797 1.557l-.205.442-.017 8.963-.017 8.963h19.105l-.017-1.365-.018-1.365-7.862-.017-7.862-.017V2.795H89.27l.018-1.397L89.304 0l-8.41.007c-4.81.003-8.517.032-8.66.066zm22.333.022c-.763.216-1.396.77-1.75 1.535l-.205.442-.017 8.963-.017 8.963h20.325V0l-9.02.006c-7.081.005-9.083.024-9.316.09zm23.51.038c-.759.247-1.409.868-1.718 1.643l-.144.362-.018 8.93-.017 8.93h3.347v-8.552h13.376V20l1.656-.018 1.656-.017.017-9.983.016-9.982h-3.345v8.617h-13.376V0l-.531.004c-.335.002-.673.05-.919.13zm23.353.005c-.654.23-1.283.778-1.581 1.375-.323.647-.319.534-.321 9.818l-.001 8.667h3.344V11.38h13.763v8.618h3.28V12.12c0-4.332.019-8.832.043-9.999L160 0l-9.094.002c-8.978.002-9.1.004-9.475.136zM63.513 5.69v2.927H50.072V2.763h13.44V5.69zm46.046 4.342v7.203H95.925V2.829h13.634v7.203zm47.076-4.309v2.894h-13.763V2.83h13.763v2.894z" fill="#fff"/><path d="M7.344 37.945l.085-1.36-5.984 7.65-.085 1.36 5.984-7.65zm-5.1-.765H1.36v8.415l.884-1.258V37.18zm5.185-.595l-.884 1.258V45h.884v-8.415zM18.863 45h1.003l-2.04-8.415-.476 1.598L18.863 45zm-4.403-.765l.306 1.292 3.145-7.038-.085-1.904-3.366 7.65zm.306 1.292l.306-1.292-3.315-7.65-.085 1.904 3.094 7.038zM9.717 45h1.02l1.496-6.817-.476-1.598L9.717 45zm18.435-7.055l.085-1.36-5.984 7.65-.085 1.36 5.984-7.65zm-5.1-.765h-.884v8.415l.884-1.258V37.18zm5.185-.595l-.884 1.258V45h.884v-8.415zm7.729 1.938l2.839 6.103h.986l-3.825-8.041-3.825 8.041h.986l2.839-6.103zM39.926 45v1.53h.885v-2.363h-9.69v2.363h.935V45h7.87zm10.953-7.82l-3.264 3.23L51.22 45h1.122l-3.723-4.488 3.383-3.332H50.88zm-3.043 0h-.833V45h.833v-7.82zm-3.893 0h-1.105l3.366 3.332L42.498 45h1.105l3.621-4.59-3.28-3.23zm9.4 3.978h3.4v-.833h-3.4v.833zm11.984-3.978h-6.239v5.1c0 .657-.124 1.139-.374 1.445-.238.306-.527.459-.867.459V45c.453 0 .839-.096 1.156-.289.318-.204.556-.504.714-.901.17-.408.255-.918.255-1.53v-4.267h4.471V45h.884v-7.82zm3.694 5.525c0-.397.102-.731.306-1.003.204-.272.481-.476.833-.612.362-.147.77-.221 1.224-.221.532 0 .992.074 1.377.221.397.136.754.323 1.07.561v-.544a2.622 2.622 0 00-.458-.374 3.044 3.044 0 00-.816-.391c-.329-.113-.731-.17-1.207-.17-.612 0-1.162.102-1.65.306a2.568 2.568 0 00-1.155.867c-.284.374-.425.839-.425 1.394 0 .555.124 1.014.374 1.377.25.351.572.618.969.799.408.17.844.255 1.309.255.555 0 1.048-.108 1.479-.323a2.639 2.639 0 001.037-.918 2.39 2.39 0 00.39-1.343l-.203-.51c0 .487-.108.901-.323 1.241-.216.34-.516.6-.901.782a2.886 2.886 0 01-1.275.272c-.34 0-.663-.057-.97-.17a1.72 1.72 0 01-.713-.544c-.181-.25-.272-.567-.272-.952zm.22-3.978a5.57 5.57 0 01.579-.425c.238-.147.51-.266.816-.357a3.212 3.212 0 011.02-.153c.544 0 .98.147 1.309.442.34.283.51.691.51 1.224V45h.884v-5.542c0-.51-.108-.946-.323-1.309a2.096 2.096 0 00-.935-.833c-.397-.204-.879-.306-1.445-.306-.669 0-1.241.113-1.717.34a6.024 6.024 0 00-1.14.697l.443.68zm12.043-.884c.6 0 1.133.136 1.598.408a2.9 2.9 0 011.122 1.156c.283.487.425 1.048.425 1.683s-.142 1.196-.425 1.683a3.184 3.184 0 01-1.14 1.156 3.13 3.13 0 01-1.58.408c-.578 0-1.1-.136-1.564-.408a3.228 3.228 0 01-1.122-1.156c-.272-.487-.408-1.048-.408-1.683l-.952-1.02c0 1.122.175 2.063.527 2.822.362.76.85 1.332 1.462 1.717a3.866 3.866 0 002.057.561c.77 0 1.456-.176 2.057-.527a3.845 3.845 0 001.445-1.445c.362-.623.544-1.326.544-2.108 0-.793-.182-1.496-.544-2.108a3.845 3.845 0 00-1.445-1.445c-.6-.351-1.287-.527-2.057-.527v.833zm-3.536 3.247h.442c0-.521.09-.98.272-1.377.192-.408.442-.748.748-1.02s.64-.482 1.003-.629a2.922 2.922 0 011.07-.221v-.833c-.475 0-.929.096-1.36.289a3.338 3.338 0 00-1.121.799c-.329.351-.59.782-.782 1.292-.182.499-.272 1.065-.272 1.7zm-.51-1.02l.782.952v-1.394c0-.805.085-1.541.255-2.21a4.26 4.26 0 01.918-1.734c.442-.487 1.042-.856 1.802-1.105.59-.204 1.1-.442 1.53-.714.442-.283.793-.6 1.054-.952.26-.363.413-.754.459-1.173h-.867c-.08.408-.306.799-.68 1.173-.374.363-.947.674-1.717.935-.907.306-1.62.748-2.142 1.326-.522.567-.884 1.258-1.088 2.074-.204.816-.306 1.757-.306 2.822zm10.198 1.02c0 .782.176 1.485.527 2.108a3.884 3.884 0 001.428 1.445 4.061 4.061 0 002.057.527c.76 0 1.44-.176 2.04-.527a3.845 3.845 0 001.445-1.445c.351-.623.527-1.326.527-2.108 0-.793-.176-1.496-.527-2.108a3.845 3.845 0 00-1.445-1.445c-.6-.351-1.28-.527-2.04-.527s-1.445.176-2.057.527c-.6.351-1.077.833-1.428 1.445-.351.612-.527 1.315-.527 2.108zm.901 0c0-.635.136-1.196.408-1.683.272-.487.64-.867 1.105-1.139a3.065 3.065 0 011.598-.425c.59 0 1.116.142 1.581.425a2.9 2.9 0 011.122 1.156c.272.487.408 1.043.408 1.666 0 .635-.136 1.196-.408 1.683a3.053 3.053 0 01-1.122 1.156 3.07 3.07 0 01-1.581.408c-.59 0-1.122-.136-1.598-.408a3.095 3.095 0 01-1.105-1.156c-.272-.487-.408-1.048-.408-1.683zm10.708 7.65V37.18h-.884v11.56h.884zm6.681-7.65c0-.85-.17-1.575-.51-2.176a3.47 3.47 0 00-1.36-1.411 3.722 3.722 0 00-1.904-.493c-.657 0-1.235.181-1.734.544-.498.351-.89.833-1.173 1.445-.272.612-.408 1.309-.408 2.091 0 .77.136 1.468.408 2.091.284.612.675 1.1 1.173 1.462.499.351 1.077.527 1.734.527a3.72 3.72 0 001.904-.493 3.47 3.47 0 001.36-1.411c.34-.612.51-1.337.51-2.176zm-.884 0c0 .68-.136 1.264-.408 1.751a2.876 2.876 0 01-1.088 1.122c-.453.25-.957.374-1.513.374-.476 0-.929-.142-1.36-.425a3.113 3.113 0 01-1.037-1.156c-.26-.487-.39-1.043-.39-1.666s.13-1.179.39-1.666a3.116 3.116 0 011.037-1.156 2.436 2.436 0 011.36-.425c.556 0 1.06.13 1.513.391.454.25.816.618 1.088 1.105.272.487.408 1.071.408 1.751zm4.086 1.615c0-.397.102-.731.306-1.003.204-.272.481-.476.833-.612.362-.147.77-.221 1.224-.221.532 0 .991.074 1.377.221.396.136.753.323 1.071.561v-.544a2.645 2.645 0 00-.459-.374 3.044 3.044 0 00-.816-.391c-.329-.113-.731-.17-1.207-.17-.612 0-1.162.102-1.649.306a2.562 2.562 0 00-1.156.867c-.284.374-.425.839-.425 1.394 0 .555.124 1.014.374 1.377.249.351.572.618.969.799.408.17.844.255 1.309.255.555 0 1.048-.108 1.479-.323a2.644 2.644 0 001.037-.918c.26-.397.391-.844.391-1.343l-.204-.51c0 .487-.108.901-.323 1.241a2.1 2.1 0 01-.901.782 2.886 2.886 0 01-1.275.272c-.34 0-.663-.057-.969-.17a1.716 1.716 0 01-.714-.544c-.182-.25-.272-.567-.272-.952zm.221-3.978c.158-.136.351-.278.578-.425.238-.147.51-.266.816-.357a3.212 3.212 0 011.02-.153c.544 0 .98.147 1.309.442.34.283.51.691.51 1.224V45h.884v-5.542c0-.51-.108-.946-.323-1.309a2.1 2.1 0 00-.935-.833c-.397-.204-.879-.306-1.445-.306-.669 0-1.241.113-1.717.34a5.992 5.992 0 00-1.139.697l.442.68zm7.486-1.547v.833h4.59v-.833h-4.59zm1.853.238V45h.884v-7.582h-.884zm4.09 3.672c0 .782.176 1.485.527 2.108a3.893 3.893 0 001.428 1.445 4.061 4.061 0 002.057.527c.76 0 1.44-.176 2.04-.527a3.843 3.843 0 001.445-1.445c.352-.623.527-1.326.527-2.108 0-.793-.175-1.496-.527-2.108a3.843 3.843 0 00-1.445-1.445c-.6-.351-1.28-.527-2.04-.527-.759 0-1.445.176-2.057.527a3.89 3.89 0 00-1.428 1.445c-.351.612-.527 1.315-.527 2.108zm.901 0c0-.635.136-1.196.408-1.683a2.971 2.971 0 011.105-1.139 3.066 3.066 0 011.598-.425c.59 0 1.117.142 1.581.425a2.9 2.9 0 011.122 1.156c.272.487.408 1.043.408 1.666 0 .635-.136 1.196-.408 1.683a3.053 3.053 0 01-1.122 1.156 3.067 3.067 0 01-1.581.408 3.164 3.164 0 01-1.598-.408 3.1 3.1 0 01-1.105-1.156c-.272-.487-.408-1.048-.408-1.683zm10.709 7.65V37.18h-.884v11.56h.884zm6.681-7.65c0-.85-.17-1.575-.51-2.176a3.476 3.476 0 00-1.36-1.411 3.727 3.727 0 00-1.904-.493c-.658 0-1.236.181-1.734.544-.499.351-.89.833-1.173 1.445-.272.612-.408 1.309-.408 2.091 0 .77.136 1.468.408 2.091.283.612.674 1.1 1.173 1.462.498.351 1.076.527 1.734.527.702 0 1.337-.164 1.904-.493a3.476 3.476 0 001.36-1.411c.34-.612.51-1.337.51-2.176zm-.884 0c0 .68-.136 1.264-.408 1.751a2.883 2.883 0 01-1.088 1.122 3.09 3.09 0 01-1.513.374c-.476 0-.93-.142-1.36-.425a3.1 3.1 0 01-1.037-1.156c-.261-.487-.391-1.043-.391-1.666s.13-1.179.391-1.666a3.1 3.1 0 011.037-1.156c.43-.283.884-.425 1.36-.425.555 0 1.059.13 1.513.391.453.25.816.618 1.088 1.105.272.487.408 1.071.408 1.751zm9.95-3.145l.085-1.36-5.984 7.65-.085 1.36 5.984-7.65zm-5.1-.765h-.884v8.415l.884-1.258V37.18zm5.185-.595l-.884 1.258V45h.884v-8.415zM154.11 45l2.72-3.757h-.986L153.124 45h.986zm4.998 0v-7.82h-.884V45h.884zm-.527-3.91h-2.227c-.397 0-.742-.051-1.037-.153a1.534 1.534 0 01-.697-.51c-.159-.238-.238-.538-.238-.901 0-.374.079-.674.238-.901.17-.227.402-.391.697-.493a2.89 2.89 0 011.037-.17h2.227v-.782h-2.227c-.533 0-1.02.08-1.462.238a2.148 2.148 0 00-1.02.748c-.249.34-.374.793-.374 1.36 0 .555.125 1.009.374 1.36.249.34.589.59 1.02.748a4.29 4.29 0 001.462.238h2.227v-.782z" fill="#B6B6B6"/></symbol><symbol id="play"><path d="M9 4.036c2.667 1.54 4 2.31 4 3.464 0 1.155-1.333 1.925-4 3.464l-2.25 1.3c-2.667 1.539-4 2.309-5 1.731-1-.577-1-2.117-1-5.196V6.201c0-3.08 0-4.619 1-5.196 1-.578 2.333.192 5 1.732L9 4.036z" fill="#48453D"/></symbol></svg></div>
+		<header class="page-header">
+			<div class="page-header__wrapper content">
+				<div class="page-header__logo">
+					<svg>
+						<use xlink:href="#logo"></use>
+					</svg>
+				</div>
+				<nav class="page-header__nav-list page-header__nav-list--hide"><a class="page-header__nav-item" href="#" data-id="portfolio">Портфолио</a><a class="page-header__nav-item" href="#" data-id="prices">Цены</a><a class="page-header__nav-item" href="#" data-id="masters">Мастера</a><a class="page-header__nav-item" href="#" data-id="reviews">Отзывы</a>
+				</nav>
+				<div class="page-header__buttons">
+					<button class="btn"><span class="btn__wrapper"><span class="btn__name">Записаться</span></span></button>
+					<button class="page-header__menu-button"><span class="visually-hidden">Открыть меню</span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page-main">
+			<div class="about content">
+				<div class="about__description">
+					<h1 class="title title--h1">Салон красоты<br/><span>Персона</span>
+						на&nbsp;Дубровке
+					</h1>
+					<p>предоставляем все бьюти услуги:&nbsp;<span class="about__description-services about__description-services--0">восстановление волос</span><span class="about__description-services about__description-services--1">окрашивание волос</span><span class="about__description-services about__description-services--2">эпиляция</span><span class="about__description-services about__description-services--3">наращивание ресниц</span><span class="about__description-services about__description-services--4">стрижки</span>
+					</p>
+					<ul class="about__description-list">
+						<li>
+							<p class="about__description-item"><span>Премиум-услуги</span> по доступным ценам: опытные специалисты, используем <span>косметику из Европы</span></p>
+						</li>
+						<li>
+							<p class="about__description-item"><span>Рядом с домом/офисом:</span><br>удобное расположение, экономия времени, парковка.</p>
+						</li>
+						<li>
+							<p class="about__description-item"><span>Работаем в 4 руки:</span><br>комбинируем несколько услуг и оказываем их одновременно.</p>
+						</li>
+					</ul>
+					<div class="about__description-more"><span>Кажется что чего-то не хватает? Нажмите сюда сейчас&nbsp;&xrarr;</span>
+						<button class="btn btn--big"><span class="btn__wrapper"><span class="btn__name">Получить скидку 20%</span></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="welcome content">
+				<h2 class="title title--h2">Давайте знакомиться!</h2>
+				<ul class="welcome__list">
+					<li class="welcome__item welcome__item--consultation">
+						<div class="welcome__item-wrapper">
+							<p class="welcome__item-description">Опытный мастер проведет консультацию</p>
+						</div>
+					</li>
+					<li class="welcome__item welcome__item--diagnostic">
+						<div class="welcome__item-wrapper">
+							<p class="welcome__item-description">Сделаем аппаратную диагностику волос при необходимости</p>
+						</div>
+					</li>
+					<li class="welcome__item welcome__item--drinks">
+						<div class="welcome__item-wrapper">
+							<p class="welcome__item-description">Угостим кофе, чаем или газированными напитками</p>
+						</div>
+					</li>
+					<li class="welcome__item welcome__item--price">
+						<div class="welcome__item-wrapper">
+							<p class="welcome__item-description">Зафиксируем финальную стоимость работ перед началом</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="portfolio content js-section" id="portfolio">
+				<h2 class="title title--h2">Портфолио</h2>
+				<p>Каждый день мы сталкиваемся с абсолютно разными запросами от клиентов, и на протяжении 7 лет работы салона красоты - справляемся со всем на 100%</p>
+				<div class="portfolio__wrapper">
+					<div class="portfolio__swiper-container">
+						<div class="portfolio__list-prev"></div>
+						<ul class="portfolio__list">
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_1.webp 1x, img/portfolio/portfolio_1@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_1.png" srcset="img/portfolio/portfolio_1@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_5.webp 1x, img/portfolio/portfolio_5@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_5.png" srcset="img/portfolio/portfolio_5@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_6.webp 1x, img/portfolio/portfolio_6@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_6.png" srcset="img/portfolio/portfolio_6@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_7.webp 1x, img/portfolio/portfolio_7@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_7.png" srcset="img/portfolio/portfolio_7@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_8.webp 1x, img/portfolio/portfolio_8@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_8.png" srcset="img/portfolio/portfolio_8@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_2.webp 1x, img/portfolio/portfolio_2@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_2.png" srcset="img/portfolio/portfolio_2@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_5.webp 1x, img/portfolio/portfolio_5@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_5.png" srcset="img/portfolio/portfolio_5@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_6.webp 1x, img/portfolio/portfolio_6@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_6.png" srcset="img/portfolio/portfolio_6@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_7.webp 1x, img/portfolio/portfolio_7@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_7.png" srcset="img/portfolio/portfolio_7@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_8.webp 1x, img/portfolio/portfolio_8@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_8.png" srcset="img/portfolio/portfolio_8@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_3.webp 1x, img/portfolio/portfolio_3@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_3.png" srcset="img/portfolio/portfolio_3@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_5.webp 1x, img/portfolio/portfolio_5@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_5.png" srcset="img/portfolio/portfolio_5@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_6.webp 1x, img/portfolio/portfolio_6@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_6.png" srcset="img/portfolio/portfolio_6@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_7.webp 1x, img/portfolio/portfolio_7@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_7.png" srcset="img/portfolio/portfolio_7@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_8.webp 1x, img/portfolio/portfolio_8@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_8.png" srcset="img/portfolio/portfolio_8@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_4.webp 1x, img/portfolio/portfolio_4@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_4.png" srcset="img/portfolio/portfolio_4@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_5.webp 1x, img/portfolio/portfolio_5@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_5.png" srcset="img/portfolio/portfolio_5@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_6.webp 1x, img/portfolio/portfolio_6@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_6.png" srcset="img/portfolio/portfolio_6@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_7.webp 1x, img/portfolio/portfolio_7@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_7.png" srcset="img/portfolio/portfolio_7@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+							<li class="portfolio__item swiper-slide">
+								<picture>
+									<source type="image/webp" srcset="img/portfolio/portfolio_8.webp 1x, img/portfolio/portfolio_8@2x.webp 2x"/><img loading="lazy" src="img/portfolio/portfolio_8.png" srcset="img/portfolio/portfolio_8@2x.png 2x" alt="portfolio-pic"/>
+								</picture>
+							</li>
+						</ul>
+						<div class="portfolio__list-next"></div>
+					</div>
+				</div><a class="btn btn--big" href="#"><span class="btn__wrapper"><span>больше работ в инстаграм  →</span></span></a>
+			</div>
+			<div class="services content js-section" id="prices">
+				<h2 class="title title--h2">Услуги и цены</h2>
+				<div class="tabs">
+					<input type="radio" name="tab-btn" id="tab-btn-0" checked="checked" value=""/>
+					<label for="tab-btn-0"><span class="tabs__btn-wrapper"><span>Парикмахерский зал</span></span></label>
+					<input type="radio" name="tab-btn" id="tab-btn-1" value=""/>
+					<label for="tab-btn-1"><span class="tabs__btn-wrapper"><span>Окрашивание и уход</span></span></label>
+					<input type="radio" name="tab-btn" id="tab-btn-2" value=""/>
+					<label for="tab-btn-2"><span class="tabs__btn-wrapper"><span>Брови и ресницы</span></span></label>
+					<input type="radio" name="tab-btn" id="tab-btn-3" value=""/>
+					<label for="tab-btn-3"><span class="tabs__btn-wrapper"><span>маникюр</span></span></label>
+					<input type="radio" name="tab-btn" id="tab-btn-4" value=""/>
+					<label for="tab-btn-4"><span class="tabs__btn-wrapper"><span>косметология</span></span></label>
+					<div class="services__description" id="content-0">
+						<div class="services__prices">
+							<div class="services__master">
+								<div class="services__master-wrapper">
+									<p>Цены указаны, исходя из категории специалиста:</p>
+									<div class="services__master-change">
+										<div class="services__master-change-wrapper">
+											<p class="services__current-master">мастер</p>
+											<ul class="services__master-list services__master-list--hide">
+												<li class="services__master-type">мастер</li>
+												<li class="services__master-type">топ-мастер</li>
+												<li class="services__master-type">стилист</li>
+												<li class="services__master-type">топ-стилист</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="services__service-list">
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Женская стрижка</p><span>мытье, стрижка и укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1700</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Детская стрижка</p><span>мытье, стрижка и укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Коррекция челки</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">500</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Экспресс укладка</p><span>укладка на брашинг/плойку без мытья и стайлинга</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1200</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Вечерняя, свадебная прическа</p><span>мытьё, сбор причёски (возможно использование доп. украшений)</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1800</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Укладка дневная</p><span>мытьё, укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1400</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Укладка коктейльная</p><span>мытьё, укладка с использованием термоинструментов</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">2000</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="services__description" id="content-1">
+						<div class="services__prices">
+							<div class="services__master">
+								<div class="services__master-wrapper">
+									<p>Цены указаны, исходя из категории специалиста:</p>
+									<div class="services__master-change">
+										<div class="services__master-change-wrapper">
+											<p class="services__current-master">мастер</p>
+											<ul class="services__master-list services__master-list--hide">
+												<li class="services__master-type">мастер</li>
+												<li class="services__master-type">топ-мастер</li>
+												<li class="services__master-type">стилист</li>
+												<li class="services__master-type">топ-стилист</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="services__service-list">
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Окрашивание (кор.)</p><span>окрашивание, укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1700</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Окрашивание (сред.)</p><span>окрашивание, укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Окрашивание (длин.)</p><span>окрашивание, укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">500</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Air Touch</p><span>премиальный вид окрашивания</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1200</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Тонирование(кор.)</p><span>тонирование, укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1800</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Тонирование (сред.)</p><span>тонирование, укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1400</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Тонирование (длин.)</p><span>тонирование, укладка</span>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">2000</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="services__description" id="content-2">
+						<div class="services__prices">
+							<div class="services__master">
+								<div class="services__master-wrapper">
+									<p>Цены указаны, исходя из категории специалиста:</p>
+									<div class="services__master-change">
+										<div class="services__master-change-wrapper">
+											<p class="services__current-master">мастер</p>
+											<ul class="services__master-list services__master-list--hide">
+												<li class="services__master-type">мастер</li>
+												<li class="services__master-type">топ-мастер</li>
+												<li class="services__master-type">стилист</li>
+												<li class="services__master-type">топ-стилист</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="services__service-list">
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Объем ´Классика´</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1700</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Объем 1,5D</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Объем 2D</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">500</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Объем 2,5D</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1200</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Объем 3D</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1800</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Голливудский объем</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1400</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Снятие ресниц</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">2000</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="services__description" id="content-3">
+						<div class="services__prices">
+							<div class="services__master">
+								<div class="services__master-wrapper">
+									<p>Цены указаны, исходя из категории специалиста:</p>
+									<div class="services__master-change">
+										<div class="services__master-change-wrapper">
+											<p class="services__current-master">мастер</p>
+											<ul class="services__master-list services__master-list--hide">
+												<li class="services__master-type">мастер</li>
+												<li class="services__master-type">топ-мастер</li>
+												<li class="services__master-type">стилист</li>
+												<li class="services__master-type">топ-стилист</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ul class="services__service-list">
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Маникюр (классический/аппаратный/смешанный)</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1700</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Европейский маникюр</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Детский маникюр</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">500</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Покрытие лак</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1200</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Покрытие гель-лак</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1800</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Педикюр</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">1400</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+								<li class="services__service-item">
+									<div class="services__service-item-title">
+										<p>Наращивание ногтей</p>
+									</div>
+									<p class="services__service-item-price"><span class="services__service-current-price">2000</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="services__description" id="content-4">
+						<div class="services__prices">
+							<div class="services__master">
+							</div>
+							<ul class="accordion__info-list">
+								<li class="accordion__info-item">
+									<input class="visually-hidden" type="checkbox" name="accordion-item" id="accordion-item-0" checked="checked"/>
+									<label class="accordion__info-item-title" for="accordion-item-0"><span>Косметология</span></label>
+									<div class="accordion__info-description">
+										<ul class="services__service-list">
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Атравматическая чистка</p><span>уход, чистка</span>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Комплексная чистка лица (Holy Land)</p><span>уход, чистка</span>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Ультразвуковаяаппаратная чистка лица</p><span>уход, чистка</span>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Механическая чистка лица</p>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Микротоки лицо</p>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1800</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Микротоки лицо+зона декольте</p>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1400</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="accordion__info-item">
+									<input class="visually-hidden" type="checkbox" name="accordion-item" id="accordion-item-1"/>
+									<label class="accordion__info-item-title" for="accordion-item-1"><span>Эпиляция (верхняя часть тела)</span></label>
+									<div class="accordion__info-description">
+										<ul class="services__service-list">
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Атравматическая чистка</p><span>уход, чистка</span>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="accordion__info-item">
+									<input class="visually-hidden" type="checkbox" name="accordion-item" id="accordion-item-2"/>
+									<label class="accordion__info-item-title" for="accordion-item-2"><span>Эпиляция (нижняя часть тела)</span></label>
+									<div class="accordion__info-description">
+										<ul class="services__service-list">
+											<li class="services__service-item">
+												<div class="services__service-item-title">
+													<p>Механическая чистка лица</p>
+												</div>
+												<p class="services__service-item-price"><span class="services__service-current-price">1300</span><span class="services__service-item-offer-price services__service-item-offer-price--hide"></span></p>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="services__offer">
+					<button class="btn btn--big services__offer-button"><span class="btn__wrapper"><span class="btn__name">воспользоваться скидкой 20%</span></span></button>
+					<button class="btn btn--big services__book-button services__book-button--hide"><span class="btn__wrapper"><span class="btn__name">записаться</span></span></button><span class="services__offer-note">Цены пересчитаются автоматически</span>
+				</div>
+			</div>
+			<div class="specialists js-section" id="masters">
+				<h2 class="title title--h2">Наши специалисты</h2>
+				<ul class="specialists__list">
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+					<li class="specialists__item">
+						<div class="specialists__item-photo"><img src="../../img/master.png"/>
+							<button class="specialists__item-more">
+								<svg>
+									<use xlink:href="#play"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="specialists__item-about">
+							<p class="specialists__item-name">Екатерина Боркарова</p>
+							<p class="specialists__item-position">топ-стилист</p>
+							<p class="specialists__item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="reviews content js-section" id="reviews">
+				<h2 class="title title--h2">Отзывы</h2>
+				<ul class="reviews__list">
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_1.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">@ritamirzoian</p>
+									<p class="reviews__item-place">PERSONA Дубровка</p>
+								</div>
+							</div>
+							<div class="reviews__item-photo"><img src="img/reviews/photo_1.png"/></div>
+							<div class="reviews__item-review"><span class="reviews__item-review-name">@ritamirzoian</span>
+								<p class="reviews__item-review-text reviews__item-review-text--small">Пришла на маникюр, а ушла ещё и с целым набором сделанных косметологических процедур. Пришла на маникюр, а ушла ещё и с целым набором сделанных косметологических процедур.</p>
+							</div>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_2.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">Екатерина С.</p>
+									<div class="reviews__item-rate-wrapper">
+										<div class="reviews__item-rate"><span class="visually-hidden">0</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">1</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">2</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">3</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">4</span><img class="reviews__item-rate-star" src="img/star.svg"/>
+										</div>
+										<p class="reviews__item-date">13 апреля</p>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__item-review">
+								<p class="reviews__item-review-text">Супер профессионалы, классные мастера. Хожу регулярно, всегда советуют средства по уходу,подбирают прическу и стиль. Удобно, комфортно, все на уровне!</p>
+							</div>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_3.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">Юлия Смит</p>
+									<div class="reviews__item-rate-wrapper">
+										<div class="reviews__item-rate"><span class="visually-hidden">0</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">1</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">2</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">3</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">4</span><img class="reviews__item-rate-star" src="img/star.svg"/>
+										</div>
+										<p class="reviews__item-date">3 апреля</p>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__item-review">
+								<p class="reviews__item-review-text">Екатерина Баркарова!!!! Профессионал, мастер своего дела, который просто обожает свою работу. Это собственно видно по результату стрижки. Сделала именно так, как мне хотелось и даже чуточку лучше)</p>
+							</div>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_4.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">@starikovakatya</p>
+									<p class="reviews__item-place">PERSONA Дубровка</p>
+								</div>
+							</div>
+							<div class="reviews__item-photo"><img src="img/reviews/photo_2.png"/></div>
+							<div class="reviews__item-review"><span class="reviews__item-review-name">@starikovakatya</span>
+								<p class="reviews__item-review-text reviews__item-review-text--small">Когда едешь от косметолога довольный и абсолютно счастливый.</p>
+							</div>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_5.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">@merdeeva</p>
+									<p class="reviews__item-place">PERSONA Дубровка</p>
+								</div>
+							</div>
+							<div class="reviews__item-photo"><img src="img/reviews/photo_3.png"/></div>
+							<div class="reviews__item-review"><span class="reviews__item-review-name">@merdeeva</span>
+								<p class="reviews__item-review-text reviews__item-review-text--small">я не ожидала, что мне ТАК сильно понравится результат.</p>
+							</div>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_6.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">Валерия Р.</p>
+									<div class="reviews__item-rate-wrapper">
+										<div class="reviews__item-rate"><span class="visually-hidden">0</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">1</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">2</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">3</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">4</span><img class="reviews__item-rate-star" src="img/star.svg"/>
+										</div>
+										<p class="reviews__item-date">31 марта</p>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__item-review">
+								<p class="reviews__item-review-text">Пользовалась их услугами на прошлой неделе - понравился персонал, все веселые, приветливые. Качество выполненной работы меня полностью устроило. Я рекомендую вам и сама приду еще не раз!</p>
+							</div>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_7.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">Валерия А.</p>
+									<div class="reviews__item-rate-wrapper">
+										<div class="reviews__item-rate"><span class="visually-hidden">0</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">1</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">2</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">3</span><img class="reviews__item-rate-star" src="img/star.svg"/><span class="visually-hidden">4</span><img class="reviews__item-rate-star" src="img/star.svg"/>
+										</div>
+										<p class="reviews__item-date">15 апреля</p>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__item-review">
+								<p class="reviews__item-review-text">Супер профессионалы, классные мастера. Хожу регулярно, всегда советуют средства по уходу, подбирают прическу и стиль. Удобно, комфортно, все на уровне!</p>
+							</div>
+						</div>
+					</li>
+					<li class="reviews__item">
+						<div class="reviews__item-wrapper">
+							<div class="reviews__item-about"><img src="img/reviews/avatar_8.png"/>
+								<div class="reviews__item-name-wrapper">
+									<p class="reviews__item-name">@dontworry198</p>
+									<p class="reviews__item-place">PERSONA Дубровка</p>
+								</div>
+							</div>
+							<div class="reviews__item-photo"><img src="img/reviews/photo_4.png"/></div>
+							<div class="reviews__item-review"><span class="reviews__item-review-name">@dontworry198</span>
+								<p class="reviews__item-review-text reviews__item-review-text--small">Вот и я очень долго и упорно пытался найти ебе что-то подходящее и наконец-то нашёл.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="consultation content">
+				<div class="consultation__wrapper">
+					<div class="consultation__about">
+						<h2 class="title title--h2">Мы заботимся о&nbsp;вашем времени,</h2>
+						<p>и поэтому предлагаем провести 15-минутную консультацию в Whatsapp/Telegram<a class="consultation__about-whatsapp" href="#"><img src="img/whatsapp.svg"/></a><a class="consultation__about-telegram" href="#"><img src="img/telegram.svg"/></a></p>
+						<button class="btn btn--big"><span class="btn__wrapper"><span class="btn__name">записаться на консультацию</span></span></button>
+					</div>
+					<ul class="consultation__steps">
+						<li class="consultation__step"><img class="consultation__step-number" src="img/step_1.svg"/>
+							<div class="consultation__step-description">
+								<h3>Выявление потребностей</h3>
+								<p>расскажите о своих пожеланиях в стрижке/окрашивании/маникюре или отправьте фото, на котором вас устраивает результат работы.</p>
+							</div>
+						</li>
+						<li class="consultation__step"><img class="consultation__step-number" src="img/step_2.svg"/>
+							<div class="consultation__step-description">
+								<h3>Диагностика</h3>
+								<p>отправьте фотографии или видео волос/рук в текущем состоянии. Наши специалисты сделают предварительную оценку реальности проведения процедуры.</p>
+							</div>
+						</li>
+						<li class="consultation__step"><img class="consultation__step-number" src="img/step_3.svg"/>
+							<div class="consultation__step-description">
+								<h3>Фиксируем стоимость</h3>
+								<p>по итогу оценки, мы предварительно фиксируем финальную стоимость работ на период в две недели.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contacts content">
+				<h2 class="title title--h2">Контакты</h2>
+				<ul class="contacts__list">
+					<li class="contacts__item">
+						<div class="contacts__item-wrapper"><img src="img/map-pin.svg"/><span>ст. метро «Дубровка» ул.<br>1-я Машиностроения, д.10</span></div>
+					</li>
+					<li class="contacts__item">
+						<p>Запись по тел.:</p>
+						<div class="contacts__item-wrapper"><img src="img/phone.svg"/><a href="tel=+7 (495) 197-66-20">+7 (495) 197-66-20</a></div>
+					</li>
+					<li class="contacts__item">
+						<p>Режим работы:</p>
+						<div class="contacts__item-wrapper"><img src="img/clock.svg"/><span>пн-вс 10:00-22:00</span></div>
+					</li>
+				</ul>
+				<h3 class="title title--h3">Остались вопросы?</h3>
+				<div class="contacts__networks">
+					<button class="btn btn--whatsapp"><span class="btn__wrapper"><span class="btn__name">whatsapp</span></span></button>
+					<button class="btn btn--telegram"><span class="btn__wrapper"><span class="btn__name">telegram</span></span></button>
+					<button class="btn btn--instagram"><span class="btn__wrapper"><span class="btn__name">instagram</span></span></button>
+				</div>
+				<button class="btn contacts__help"><span class="btn__wrapper"><span class="btn__name">как добраться?</span></span></button>
+			</div>
+		</main>
+		<header class="page-footer">
+			<div class="page-footer__wrapper content">
+				<div class="page-footer__logo">
+					<svg>
+						<use xlink:href="#logo"></use>
+					</svg>
+				</div>
+				<div class="page-footer__nav">
+					<nav class="page-footer__nav-list"><a class="page-footer__nav-item" href="#portfolio">Портфолио</a><a class="page-footer__nav-item" href="#prices">Цены</a><a class="page-footer__nav-item" href="#masters">Мастера</a><a class="page-footer__nav-item" href="#reviews">Отзывы</a>
+					</nav><a class="page-footer__privacy-link" href="">Политика конфиденциальности</a>
+				</div>
+				<button class="btn"><span class="btn__wrapper"><span class="btn__name">Записаться</span></span></button>
+			</div>
+		</header>
+		<script src="js/swiper-bundle.min.js" type="module"></script>
+		<script src="js/main.min.js" type="module"></script>
+	</body>
+</html>
