@@ -8,28 +8,30 @@ mixin contacts
         time: 'пн-вс 10:00-22:00'
     }
 
-  .contacts.content
-    h2.title.title--h2 Контакты
-    ul.contacts__list
-      li.contacts__item
-        .contacts__item-wrapper
-          img(src='img/map-pin.svg')
-          span !{contactsList.address}
-      li.contacts__item
-        p Запись по тел.:
-        .contacts__item-wrapper
-          img(src='img/phone.svg')
-          a(href='tel=' + contactsList.phone)=contactsList.phone
-      li.contacts__item
-        p Режим работы:
-        .contacts__item-wrapper
-          img(src='img/clock.svg')
-          span=contactsList.time
-    h3.title.title--h3 Остались вопросы?
-    .contacts__networks
-      +btn('whatsapp', 'btn--whatsapp')
-      +btn('telegram', 'btn--telegram')
-      +btn('instagram', 'btn--instagram')
-    +btn('как добраться?', 'contacts__help')
+  .contacts
+    .contacts__bg
+      .content
+        h2.title.title--h2 Контакты
+        ul.contacts__list
+          li.contacts__item
+            .contacts__item-wrapper
+              img(src='img/map-pin.svg')
+              span !{contactsList.address}
+          li.contacts__item
+            p Запись по тел.:
+            .contacts__item-wrapper
+              img(src='img/phone.svg')
+              a(href='tel=' + contactsList.phone)=contactsList.phone
+          li.contacts__item
+            p Режим работы:
+            .contacts__item-wrapper
+              img(src='img/clock.svg')
+              span=contactsList.time
+        h3.title.title--h3 Остались вопросы?
+        .contacts__networks
+          +btn('whatsapp', 'btn--whatsapp')
+          +btn('telegram', 'btn--telegram')
+          +btn('instagram', 'btn--instagram')
+        +btn('как добраться?', 'contacts__help')
 
 

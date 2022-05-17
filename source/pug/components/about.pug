@@ -16,20 +16,23 @@ mixin about
       'стрижки'
     ]
 
-  .about.content
-    .about__description
-      h1.title.title--h1 Салон красоты
-        br
-        span Персона
-        |
-        | на&nbsp;Дубровке
-      p предоставляем все бьюти услуги:&nbsp;
-        each service, index in servicesList
-          span.about__description-services(class='about__description-services--' + index)=service
-      ul.about__description-list
-        each item in descriptionList
-          li
-            p.about__description-item !{item}
-      .about__description-more
-        span Кажется что чего-то не хватает? Нажмите сюда сейчас&nbsp;&xrarr;
-        +btn('Получить скидку 20%', 'btn--big')
+  .about
+    .about__bg
+      .content
+        .about__description
+          .about__description-wrapper
+            h1.title.title--h1 Салон красоты
+              br
+              span Персона
+              |
+              | на&nbsp;Дубровке
+            p предоставляем все бьюти услуги:&nbsp;
+              each service, index in servicesList
+                span.about__description-services(class='about__description-services--' + index)=service
+            ul.about__description-list
+              each item in descriptionList
+                li
+                  p.about__description-item !{item}
+            .about__description-more
+              span Кажется что чего-то не хватает? Нажмите сюда сейчас&nbsp;&xrarr;
+              +btn('Получить скидку 20%', 'btn--big')

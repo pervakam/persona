@@ -77,36 +77,38 @@ mixin reviews
       }
     ]
 
-  .reviews.content(id='reviews' class='js-section')
-    h2.title.title--h2 Отзывы
-    ul.reviews__list
-      each item in reviewsList
-        li.reviews__item
-          .reviews__item-wrapper
-            .reviews__item-about
-              img(src=item.avatar)
-              .reviews__item-name-wrapper
-                p.reviews__item-name=item.name
+  .reviews(id='reviews' class='js-section')
+    .reviews__bg
+      .content
+        h2.title.title--h2 Отзывы
+        ul.reviews__list
+          each item in reviewsList
+            li.reviews__item
+              .reviews__item-wrapper
+                .reviews__item-about
+                  img(src=item.avatar)
+                  .reviews__item-name-wrapper
+                    p.reviews__item-name=item.name
+                    if item.photo
+                      p.reviews__item-place=item.place
+                    else
+                      .reviews__item-rate-wrapper
+                        -
+                          let star = 0
+                        .reviews__item-rate
+                          while star < item.rate
+                            span.visually-hidden=star++
+                            img.reviews__item-rate-star(src='img/star.svg')
+                        p.reviews__item-date=item.date
                 if item.photo
-                  p.reviews__item-place=item.place
-                else
-                  .reviews__item-rate-wrapper
-                    -
-                      let star = 0
-                    .reviews__item-rate
-                      while star < item.rate
-                        span.visually-hidden=star++
-                        img.reviews__item-rate-star(src='img/star.svg')
-                    p.reviews__item-date=item.date
-            if item.photo
-              .reviews__item-photo
-                img(src=item.photo)
-            .reviews__item-review
-              if item.photo
-                span.reviews__item-review-name=item.name
-                p.reviews__item-review-text.reviews__item-review-text--small=item.review
-              else
-                p.reviews__item-review-text=item.review
+                  .reviews__item-photo
+                    img(src=item.photo)
+                .reviews__item-review
+                  if item.photo
+                    span.reviews__item-review-name=item.name
+                    p.reviews__item-review-text.reviews__item-review-text--small=item.review
+                  else
+                    p.reviews__item-review-text=item.review
 
 
 

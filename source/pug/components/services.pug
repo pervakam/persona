@@ -228,65 +228,67 @@ mixin services
 
     const masterType = ['мастер', 'топ-мастер', 'стилист', 'топ-стилист']
 
-  .services.content(id='prices' class='js-section')
-    h2.title.title--h2 Услуги и цены
-    .tabs
-      each item, index in servicesList
-        input(
-          type='radio'
-          name='tab-btn'
-          id='tab-btn-' + index
-          checked=item.checked
-          value=''
-        )
-        label(for='tab-btn-' + index)
-          span.tabs__btn-wrapper
-            span=item.title
+  .services
+    .services__bg
+      .content(id='prices' class='js-section')
+        h2.title.title--h2 Услуги и цены
+        .tabs
+          each item, index in servicesList
+            input(
+              type='radio'
+              name='tab-btn'
+              id='tab-btn-' + index
+              checked=item.checked
+              value=''
+            )
+            label(for='tab-btn-' + index)
+              span.tabs__btn-wrapper
+                span=item.title
 
-      each item, index in servicesList
-        .services__description(id='content-' + index)
-          .services__prices
-            .services__master
-              if !item.noFilter
-                .services__master-wrapper
-                  p Цены указаны, исходя из категории специалиста:
-                  .services__master-change
-                    .services__master-change-wrapper
-                      p.services__current-master
-                        span.services__current-master-type=masterType[0]
-                      ul.services__master-list.services__master-list--hide
-                        each type in masterType
-                          li.services__master-type=type
-            if !item.noFilter
-              ul.services__service-list
-                each service in item.description
-                  li.services__service-item
-                    .services__service-item-title
-                      p=service.title
-                      if service.description
-                        span=service.description
-                    p.services__service-item-price
-                      span.services__service-current-price=service.price
-                      span.services__service-item-offer-price.services__service-item-offer-price--hide
-            if item.noFilter
-              ul.accordion__info-list
-                each service, i in item.description
-                  li.accordion__info-item
-                    input(type="checkbox" name="accordion-item" class="visually-hidden" id="accordion-item-" + i + "" checked=i === 0 ? 'checked' : false)
-                    label.accordion__info-item-title(for="accordion-item-" + i + "")
-                      span=service.type
-                    .accordion__info-description
-                      ul.services__service-list
-                        each serviceItem in service.services
-                          li.services__service-item
-                            .services__service-item-title
-                              p=serviceItem.title
-                              if serviceItem.description
-                                span=serviceItem.description
-                            p.services__service-item-price
-                              span.services__service-current-price=serviceItem.price
-                              span.services__service-item-offer-price.services__service-item-offer-price--hide
-    .services__offer
-      +btn('воспользоваться скидкой 20%', 'btn--big services__offer-button')
-      +btn('записаться', 'btn--big services__book-button services__book-button--hide')
-      span.services__offer-note Цены пересчитаются автоматически
+          each item, index in servicesList
+            .services__description(id='content-' + index)
+              .services__prices
+                .services__master
+                  if !item.noFilter
+                    .services__master-wrapper
+                      p Цены указаны, исходя из категории специалиста:
+                      .services__master-change
+                        .services__master-change-wrapper
+                          p.services__current-master
+                            span.services__current-master-type=masterType[0]
+                          ul.services__master-list.services__master-list--hide
+                            each type in masterType
+                              li.services__master-type=type
+                if !item.noFilter
+                  ul.services__service-list
+                    each service in item.description
+                      li.services__service-item
+                        .services__service-item-title
+                          p=service.title
+                          if service.description
+                            span=service.description
+                        p.services__service-item-price
+                          span.services__service-current-price=service.price
+                          span.services__service-item-offer-price.services__service-item-offer-price--hide
+                if item.noFilter
+                  ul.accordion__info-list
+                    each service, i in item.description
+                      li.accordion__info-item
+                        input(type="checkbox" name="accordion-item" class="visually-hidden" id="accordion-item-" + i + "" checked=i === 0 ? 'checked' : false)
+                        label.accordion__info-item-title(for="accordion-item-" + i + "")
+                          span=service.type
+                        .accordion__info-description
+                          ul.services__service-list
+                            each serviceItem in service.services
+                              li.services__service-item
+                                .services__service-item-title
+                                  p=serviceItem.title
+                                  if serviceItem.description
+                                    span=serviceItem.description
+                                p.services__service-item-price
+                                  span.services__service-current-price=serviceItem.price
+                                  span.services__service-item-offer-price.services__service-item-offer-price--hide
+        .services__offer
+          +btn('воспользоваться скидкой 20%', 'btn--big services__offer-button')
+          +btn('записаться', 'btn--big services__book-button services__book-button--hide')
+          span.services__offer-note Цены пересчитаются автоматически

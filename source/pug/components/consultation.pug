@@ -21,21 +21,23 @@ mixin consultation
       }
     ]
 
-  .consultation.content
-    .consultation__wrapper
-      .consultation__about
-        h2.title.title--h2 Мы заботимся о&nbsp;вашем времени,
-        p и поэтому предлагаем провести 15-минутную консультацию в Whatsapp/Telegram
-          a.consultation__about-whatsapp(href='#')
-            img(src='img/whatsapp.svg')
-          a.consultation__about-telegram(href='#')
-            img(src='img/telegram.svg')
-        +btn('записаться на консультацию', 'btn--big')
-      ul.consultation__steps
-        each item in consultationList
-          li.consultation__step
-            img.consultation__step-number(src=item.number)
-            .consultation__step-description
-              h3=item.title
-              p=item.description
+  .consultation
+    .consultation__bg
+      .content
+        .consultation__wrapper
+          .consultation__about
+            h2.title.title--h2 Мы заботимся о&nbsp;вашем времени,
+            p и поэтому предлагаем провести 15-минутную консультацию в Whatsapp/Telegram
+              a.consultation__about-whatsapp(href='#')
+                img(src='img/whatsapp.svg')
+              a.consultation__about-telegram(href='#')
+                img(src='img/telegram.svg')
+            +btn('записаться на консультацию', 'btn--big')
+          ul.consultation__steps
+            each item in consultationList
+              li.consultation__step
+                img.consultation__step-number(src=item.number)
+                .consultation__step-description
+                  h3=item.title
+                  p=item.description
 

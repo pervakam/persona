@@ -1,10 +1,57 @@
 .contacts {
   text-align: left;
-  background-image: url("../../img/map.png");
-  background-repeat: no-repeat;
-  background-position: top -120px right;
-  padding: 72px 0;
   position: relative;
+
+  &__bg {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      z-index: -10;
+      pointer-events: none;
+      bottom: 0;
+      right: 240px;
+      display: block;
+      content: "";
+      width: 800px;
+      height: 800px;
+      background-image: url("../../img/map.png");
+      background-repeat: no-repeat;
+      background-position: bottom center;
+    }
+  }
+
+  .content {
+    padding: 72px 0;
+  }
+
+  &:before {
+    position: absolute;
+    pointer-events: none;
+    bottom: -108px;
+    display: block;
+    content: "";
+    width: 400px;
+    height: 800px;
+    background-image: url("../../img/contacts_bg-left.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  &:after {
+    position: absolute;
+    z-index: -10;
+    pointer-events: none;
+    bottom: -108px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 735px;
+    height: 860px;
+    background-image: url("../../img/contacts_bg-right.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
 
   h2 {
     text-align: left;
@@ -94,14 +141,63 @@
 
 @media (max-width: $tablet-max-width) {
   .contacts {
-    padding: 32px 24px;
+    padding: 32px 0;
+
+    &__bg {
+      position: relative;
+
+      &:after {
+        width: 400px;
+        height: 400px;
+        background-size: 100% auto;
+      }
+    }
+
+    .content {
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+
+    &:before {
+      width: 300px;
+      height: 600px;
+      background-size: 100% auto;
+    }
+
+    &:after {
+      width: 512px;
+      height: 600px;
+      background-size: 100% auto;
+    }
   }
 }
 
 @media (max-width: $mobile-max-width) {
   .contacts {
-    background-position: top -80px center;
-    padding: 32px 10px;
+    .content {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    &__bg {
+      position: relative;
+
+      &:after {
+        right: 0;
+      }
+    }
+
+    &:before {
+      width: 150px;
+      height: 300px;
+      bottom: -40px;
+    }
+
+    &:after {
+      width: 150px;
+      height: 175px;
+      bottom: -40px;
+    }
 
     &__list {
       margin-bottom: 24px;

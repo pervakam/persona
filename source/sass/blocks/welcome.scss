@@ -1,5 +1,37 @@
 .welcome {
   margin-bottom: 80px;
+  position: relative;
+
+  &__bg {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      pointer-events: none;
+      top: -140px;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 717px;
+      background-image: url("../../img/welcome_bg.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    pointer-events: none;
+    bottom: -450px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 490px;
+    height: 1200px;
+    background-image: url("../../img/welcome_bg-right.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
 
   h2 {
     text-align: left;
@@ -103,6 +135,14 @@
         margin-bottom: 20px;
       }
     }
+
+    &:after {
+      top: 50px;
+      bottom: unset;
+      width: 250px;
+      height: 600px;
+      background-size: 100% auto;
+    }
   }
 }
 
@@ -124,6 +164,14 @@
 
     &__item-wrapper {
       width: 100%;
+    }
+
+    &:after {
+      top: unset;
+      bottom: 50px;
+      width: 125px;
+      height: 300px;
+      background-size: 100% auto;
     }
   }
 }

@@ -32,6 +32,7 @@ const servicesMasterBlocks = document.querySelectorAll('.services__master-change
 
 servicesMasterBlocks.forEach((block, index) => {
   const currentMasterItem = block.querySelector('.services__current-master')
+  const currentMasterType = block.querySelector('.services__current-master-type')
   const servicesMasterList = block.querySelector('.services__master-list')
   const servicesMasterBlockWrapper = block.querySelector('.services__master-change-wrapper')
 
@@ -44,7 +45,7 @@ servicesMasterBlocks.forEach((block, index) => {
     const servicesMasterTypes = document.querySelectorAll('.services__master-type')
     servicesMasterTypes.forEach((type) => {
       type.addEventListener('click', (evt) => {
-        currentMasterItem.textContent = type.textContent
+        currentMasterType.textContent = type.textContent
         block.classList.remove('services__master-change--border')
         servicesMasterList.classList.add('services__master-list--hide')
         currentMasterItem.classList.remove('services__current-master--rotate')

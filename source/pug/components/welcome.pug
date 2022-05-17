@@ -19,11 +19,13 @@ mixin welcome
       }
     ]
 
-  .welcome.content
-    h2.title.title--h2 Давайте знакомиться!
-    ul.welcome__list
-      each item in welcomeList
-        li.welcome__item(class=item.className)
-          .welcome__item-wrapper
-            p.welcome__item-description=item.description
+  .welcome
+    .welcome__bg
+      .content
+        h2.title.title--h2 Давайте знакомиться!
+        ul.welcome__list
+          each item in welcomeList
+            li.welcome__item(class=item.className)
+              .welcome__item-wrapper
+                p.welcome__item-description=item.description
 

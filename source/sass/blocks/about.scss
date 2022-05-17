@@ -1,10 +1,73 @@
 .about {
+  position: relative;
+
+  &__bg {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      pointer-events: none;
+      z-index: -10;
+      top: -108px;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1678px;
+      background-image: url("../../img/about_bg.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:after {
+      position: absolute;
+      pointer-events: none;
+      z-index: -10;
+      bottom: -1020px;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1064px;
+      background-image: url("../../img/about_wave.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    pointer-events: none;
+    top: -108px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 750px;
+    height: 1570px;
+    background-image: url("../../img/about_bg-left.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  &:after {
+    position: absolute;
+    pointer-events: none;
+    top: -108px;
+    right: 0;
+    display: block;
+    content: "";
+    width: 390px;
+    height: 920px;
+    background-image: url("../../img/about_bg-right.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
   &__description {
     max-width: 646px;
     width: 100%;
     text-align: left;
     padding-top: 56px;
     padding-bottom: 68px;
+    position: relative;
 
     & > h1,
     & > p {
@@ -31,6 +94,22 @@
         color: $white;
         font-family: $Jost500;
       }
+    }
+
+    &:after {
+      position: absolute;
+      pointer-events: none;
+      z-index: -10;
+      top: -90px;
+      left: 180px;
+      display: block;
+      content: "";
+      width: 1007px;
+      height: 955px;
+      background-image: url("../../img/about_bunner.png");
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
@@ -93,9 +172,20 @@
   }
 }
 
+@media (max-width: 1900px) {
+  .about {
+    &:after,
+    &:before {
+      z-index: -10;
+    }
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .about {
     &__description {
+      max-width: 100%;
+
       & > h1 {
         padding-right: 20px;
       }
@@ -103,8 +193,22 @@
       & > p {
         font-size: 22px;
         line-height: 32px;
-
       }
+
+      &:after {
+        top: unset;
+        bottom: -60px;
+        left: unset;
+        right: 0;
+        width: 500px;
+        height: 470px;
+        background-size: 100% auto;
+      }
+    }
+
+    &__description-wrapper {
+      max-width: 646px;
+      width: 100%;
     }
 
     &__description-list {
@@ -117,10 +221,29 @@
       align-items: flex-start;
 
       & > span {
-        width: 70%;
+        width: 80%;
         margin-right: 0;
         margin-bottom: 24px;
       }
+    }
+
+    &:before {
+      top: -81px;
+      width: 375px;
+      height: 750px;
+      background-size: 100% auto;
+    }
+
+    &:after {
+      top: -81px;
+      width: 160px;
+      height: 300px;
+      background-size: 100% auto;
+    }
+
+    &:after,
+    &:before {
+      z-index: -100;
     }
   }
 }
@@ -130,13 +253,21 @@
     &__description {
       padding-top: 12px;
       padding-bottom: 36px;
+
+      & > p {
+        padding-right: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
     }
 
     &__description-list {
       flex-direction: column;
 
       li {
-        width: 58%;
+        width: 70%;
 
         &:before {
           min-width: 1px;
@@ -147,6 +278,18 @@
         }
 
       }
+    }
+
+    &:before {
+      top: -90px;
+      width: 250px;
+      height: 500px;
+    }
+
+    &:after {
+      top: -90px;
+      width: 90px;
+      height: 200px;
     }
   }
 }

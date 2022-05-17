@@ -55,15 +55,16 @@ mixin specialists
     ]
 
   .specialists(id='masters' class='js-section')
-    h2.title.title--h2 Наши специалисты
-    ul.specialists__list
-      each item in specialistsList
-        li.specialists__item
-          .specialists__item-photo
-            img(src=item.photo)
-            button.specialists__item-more
-              +icon('play')
-          .specialists__item-about
-            p.specialists__item-name=item.name
-            p.specialists__item-position=item.position
-            p.specialists__item-description=item.description
+    .content
+      h2.title.title--h2 Наши специалисты
+      ul.specialists__list
+        each item in specialistsList
+          li.specialists__item
+            .specialists__item-photo
+              img(src=item.photo)
+              button.specialists__item-more
+                +icon('play')
+            .specialists__item-about
+              p.specialists__item-name=item.name
+              p.specialists__item-position=item.position
+              p.specialists__item-description=item.description

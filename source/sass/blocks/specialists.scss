@@ -1,7 +1,27 @@
 .specialists {
-  max-width: 1194px;
+
   width: 100%;
   margin: 0 auto 100px;
+  position: relative;
+
+  .content {
+    max-width: 1194px;
+  }
+
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    display: block;
+    content: "";
+    width: 480px;
+    height: 900px;
+    background-image: url("../../img/specialists_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 
   h2 {
     margin-bottom: 44px;
